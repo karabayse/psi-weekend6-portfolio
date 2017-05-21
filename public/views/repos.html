@@ -1,0 +1,7 @@
+<!-- <div ng-controller="ReposController as rc" ng-init="rc.githubRepos()"> -->
+<div>
+<h3>Repositories</h3>
+  <div ng-repeat="object in rc.repos">
+    <a href="{{object.html_url}}">{{object.html_url}}</a>
+  </div>
+</div>

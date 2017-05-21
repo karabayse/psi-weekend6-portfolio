@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
-    <title></title>
+    <title>Kara Bayse</title>
+    <link rel="stylesheet" href="views/styles.css">
+    <link rel="stylesheet" href="vendors/bootstrap-theme.min.css">
     <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/github.service.js" charset="utf-8"></script>
+    <base href="/">
   </head>
+  
   <body ng-app="myApp">
+    <!-- <div ng-controller="ProfileController as pc" ng-init="pc.githubProfile()"> -->
+<div>
+      <h1>Kara Bayse GitHub Portfolio</h1>
+      <!-- <div ng-repeat=> -->
+        <nav>
+          <ul>
+          <a href="/">Home</a>
+          <a href="/profile">Profile</a>
+          <a href="/repos">Repositories</a>
+          </ul>
+        </nav>
+        <main ng-view></main>
+
+    </div>
   </body>
 </html>
